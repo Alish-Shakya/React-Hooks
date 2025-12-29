@@ -8,6 +8,8 @@ import UseCallback from "./components/useCallback/UseCallback";
 // import MyComponent from "./components/customHooks/MyComponent";
 import Component1 from "./components/customHooks/example2/Component1";
 import Component2 from "./components/customHooks/example2/Component2";
+import Posts from "./components/customHooks/example3/Posts";
+import Users from "./components/customHooks/example3/Users";
 
 const App = () => {
   return (
@@ -22,9 +24,12 @@ const App = () => {
       {/* <UseCallback /> */}
 
       {/* <MyComponent /> */}
-
+      {/* 
       <Component1 />
-      <Component2 />
+      <Component2 /> */}
+
+      <Posts />
+      <Users />
     </div>
   );
 };
