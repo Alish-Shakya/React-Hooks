@@ -6,7 +6,7 @@ const Posts = () => {
     data: posts,
     loading,
     error,
-  } = useFetch("https://jsonplaceholder.typicode.com/posts");
+  } = useFetch("https://dummyjson.com/comments");
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
@@ -15,8 +15,8 @@ const Posts = () => {
     <div>
       <h2>Posts List</h2>
       <ul>
-        {posts.slice(0, 5).map((p) => (
-          <li key={p.id}>{p.title}</li>
+        {posts.comments.slice(0, 10).map((p) => (
+          <li key={p.id}>{p.body}</li>
         ))}
       </ul>
     </div>

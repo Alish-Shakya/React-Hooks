@@ -8,6 +8,7 @@ const useFetch = (url) => {
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
+      setError(null)
       try {
         const res = await fetch(url);
         if (!res.ok) throw new Error("Network response was not ok");
@@ -15,7 +16,7 @@ const useFetch = (url) => {
         setData(json);
       } catch (err) {
         setError(err.message);
-      } finally {
+      } finally {   
         setLoading(false);
       }
     };

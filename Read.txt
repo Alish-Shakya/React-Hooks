@@ -1,0 +1,37 @@
+HOOK bane ko special function ho of react jasle chai react ko features haru use garna milxa 
+like state lifecycle context haru component bitra
+
+
+useState 
+        variable ko state haru lai change garna lai use hunxa
+
+useEffect 
+        api haru render garauna backend bata data haru fetch garna lai use hunxa 
+
+useCallback 
+        le function lai yaad rakhxa aani render huda recreate hunxa dedaina
+        so infinity loop ma na jayos banerw use garne 
+            -- yo chai code optimized garna lai use hunxa 
+
+custom hook 
+        baneko aauta hook banayerw tei logic chai sabai components haru ma use garne so that 
+        code optimized hos rw same logic repeteadly lekhna na paros
+            -- customm hook banauda jaile ne use bata suru garne "Ex:- useAlish"
+        
+useContext 
+        data haru gobally share garxa, props use gare rakhnu pardena
+        only work when inside the provider
+            -- context le wrap garnu parxa
+
+useMemo 
+        used for only performation optimazation  "simple calculation ko lagi use na parne heavy logics haru lai use garne"
+        heavy calculation haru skip garxa
+
+useActionState
+        form ko action ko result aanusar state haru update garna help garxa 
+        form haru le patha ko information haru use garne 
+
+useDefferredValue 
+        useDeferredValue is a React hook that allows deferring a value update to keep the UI responsive during expensive renders.
+        Urgent update haru fix garna help garxa
+

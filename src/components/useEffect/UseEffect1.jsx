@@ -9,7 +9,7 @@ const UseEffect1 = () => {
     return () => {
       console.log("im clean up function");
     };
-  });
+  }, []);
   //   console.log("b");
 
   return (

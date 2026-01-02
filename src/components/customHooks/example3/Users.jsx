@@ -16,7 +16,9 @@ const Users = () => {
       <h2>Users List</h2>
       <ul>
         {users.users.slice(0, 10).map((u) => (
-          <li key={u.id}>{u.firstName}</li>
+          <li key={u.id}>
+            {u.firstName} {u.lastName}
+          </li>
         ))}
       </ul>
     </div>
